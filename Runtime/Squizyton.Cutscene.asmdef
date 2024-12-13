@@ -1,0 +1,17 @@
+{
+    "name": "Squizyton.Cutscene",
+    "rootNamespace": "",
+    "references": [
+        "Unity.Cinemachine",
+        "Sirenix.OdinInspector.Modules.UnityMathematics"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

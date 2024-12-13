@@ -1,0 +1,12 @@
+{
+  "name": "com.squizy.cutscene-sequencer",
+  "version": "1.0.0",
+  "displayName": "Cutscene Sequencer",
+  "description": "A Basic Event Based Cutscene System",
+  "unity": "6000.0",
+  "author": {
+    "name": "Joel Hanson",
+    "email": "joel.m.hanson42@gmail.com",
+    "url": "https://joelmhanson.com"
+  }
+}
