@@ -8,10 +8,15 @@ namespace Squizyton.Cutscene
     {
         [VerticalGroup("Special Parameters"),OnValueChanged("CheckForMultiChannelPerlin")] 
         public CinemachineCamera camera;
-        private CinemachineBasicMultiChannelPerlin _perlin;
+        [VerticalGroup("Special Parameters")]
         public float amplitude;
+        [VerticalGroup("Special Parameters")]
         public float frequency;
-        private float _duration = 0f;
+        [VerticalGroup("Special Parameters")]
+        public float shakeDuration = 0f;
+        
+        
+        private CinemachineBasicMultiChannelPerlin _perlin;
         private  float _currentAmplitude = 0f;
         private  float _actualTimer = 0f;
         
@@ -37,7 +42,7 @@ namespace Squizyton.Cutscene
             
             _currentAmplitude = amplitude;
             _perlin.FrequencyGain = frequency;
-            _actualTimer = amplitude / _duration;
+            _actualTimer = amplitude / shakeDuration;
         }
 
         public override Status Executing()
