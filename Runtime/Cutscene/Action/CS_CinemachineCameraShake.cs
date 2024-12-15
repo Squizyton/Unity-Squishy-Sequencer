@@ -30,7 +30,7 @@ namespace Squizyton.Cutscene
 
         public void CheckForMultiChannelPerlin()
         {
-            if (!camera.GetComponent<CinemachineBasicMultiChannelPerlin>())
+            if (camera && !camera.GetComponent<CinemachineBasicMultiChannelPerlin>())
             {
                 Debug.LogError("The camera doesn't have CinemachineBasicMultiChannelPerlin component.");
             }
