@@ -74,4 +74,9 @@ And that's it!
 
 # How To Install
 
+
+**YOU WILL NEED ODIN**
+
+Sorry, I'll work on a Non Odin version at some point.
+
 Drop the git url into Unity > Package Manager > Install Package from Git Url
