@@ -65,3 +65,13 @@ public class CS_Example : CutsceneAction
 
 
 And that's it!
+
+
+# To-Do
+
+- Add ability to pause sequence without resorting to `Time.timeScale = 0`
+
+
+# How To Install
+
+Drop the git url into Unity > Package Manager > Install Package from Git Url
