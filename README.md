@@ -23,6 +23,8 @@ The Order is played from **Top To Bottom**.
 ![image](https://github.com/user-attachments/assets/cd501512-97aa-406a-896c-3f5067f3ce8e)
 
 
+## Result
+![sequencer](https://github.com/user-attachments/assets/7cb481a7-7a02-40a9-b2e2-1890867d7671)
 
 # Creating Custom Events.
 
