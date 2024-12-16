@@ -80,8 +80,8 @@ And that's it!
 {
     "dependencies" :
     {
-    "com.unity.cinemachine" : 3.1.2 ,
-    "Sirenix.OdinInspector" : 3.3.1.9
+    "com.unity.cinemachine" : 3.1,
+    "Sirenix.OdinInspector" : 3.3
     }
 
 }
