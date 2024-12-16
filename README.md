@@ -23,6 +23,8 @@ The Order is played from **Top To Bottom**.
 ![image](https://github.com/user-attachments/assets/cd501512-97aa-406a-896c-3f5067f3ce8e)
 
 
+## Result
+![sequencer](https://github.com/user-attachments/assets/7cb481a7-7a02-40a9-b2e2-1890867d7671)
 
 # Creating Custom Events.
 
@@ -65,3 +67,34 @@ public class CS_Example : CutsceneAction
 
 
 And that's it!
+
+
+# To-Do
+
+- Add ability to pause sequence without resorting to `Time.timeScale = 0`
+
+
+
+# Dependencies
+```json
+{
+    "dependencies" :
+    {
+    "com.unity.cinemachine" : 3.1,
+    "Sirenix.OdinInspector" : 3.3
+    }
+
+}
+
+
+```
+
+
+# How To Install
+
+
+**YOU WILL NEED ODIN**
+
+Sorry, I'll work on a Non Odin version at some point.
+
+Drop the git url into Unity > Package Manager > Install Package from Git Url
