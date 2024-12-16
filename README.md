@@ -74,6 +74,22 @@ And that's it!
 - Add ability to pause sequence without resorting to `Time.timeScale = 0`
 
 
+
+# Dependencies
+```json
+{
+    "dependencies" :
+    {
+    "com.unity.cinemachine" : 3.1.2 ,
+    "Sirenix.OdinInspector" : 3.3.1.9
+    }
+
+}
+
+
+```
+
+
 # How To Install
 
 
