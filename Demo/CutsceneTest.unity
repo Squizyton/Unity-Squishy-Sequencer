@@ -193,8 +193,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 75822571}
-  - component: {fileID: 75822570}
   - component: {fileID: 75822572}
+  - component: {fileID: 75822573}
   m_Layer: 0
   m_Name: CutscenePlayer
   m_TagString: Untagged
@@ -202,18 +202,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &75822570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75822569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3bf004e47ca88145b17a37dd70443c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &75822571
 Transform:
   m_ObjectHideFlags: 0
@@ -226,8 +214,7 @@ Transform:
   m_LocalPosition: {x: -3.2619753, y: 8.814294, z: -10.972587}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 810566305}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &75822572
@@ -243,7 +230,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sequenceToTest: {fileID: 810566306}
-  player: {fileID: 75822570}
+  player: {fileID: 75822573}
+--- !u!114 &75822573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75822569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 971e617508b32b14f87a5388c4566eac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &284140157
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,12 +418,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810566304}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.2619753, y: 8.814294, z: -10.972587}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 75822571}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &810566306
 MonoBehaviour:
@@ -435,7 +434,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 810566304}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8484ea6087332834e990252a8dd23e04, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d643456c834ee245bb111edf10ce3af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -447,6 +446,7 @@ MonoBehaviour:
     - {fileID: 882106700}
     - {fileID: 317534666}
     - {fileID: 284140158}
+    - {fileID: 1861714502}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -454,14 +454,14 @@ MonoBehaviour:
     SerializationNodes:
     - Name: CutsceneActions
       Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[Cutscene.CutsceneAction, Assembly-CSharp]],
-        mscorlib
+      Data: 0|System.Collections.Generic.List`1[[Squizyton.Cutscene.CutsceneAction,
+        Squizyton.Cutscene]], mscorlib
     - Name: 
       Entry: 12
-      Data: 5
+      Data: 6
     - Name: 
       Entry: 7
-      Data: 1|CS_MoveToPosition, Assembly-CSharp
+      Data: 1|Squizyton.Cutscene.CS_MoveToPosition, Squizyton.Cutscene
     - Name: name
       Entry: 1
       Data: Move Object To Position
@@ -479,28 +479,13 @@ MonoBehaviour:
       Data: 5
     - Name: distanceToTarget
       Entry: 4
-      Data: 0.01
+      Data: 0.1
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 2|Cutscene.Action.CS_Wait, Assembly-CSharp
-    - Name: name
-      Entry: 1
-      Data: Wait
-    - Name: description
-      Entry: 1
-      Data: Pauses the Sequence Queue for specified Time
-    - Name: pauseTime
-      Entry: 4
-      Data: 2
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 3|Cutscene.Action.CS_SetCinemachineCameraPriority, Assembly-CSharp
+      Data: 2|Squizyton.Cutscene.CS_SetCinemachineCameraPriority, Squizyton.Cutscene
     - Name: name
       Entry: 1
       Data: Camera Transition
@@ -528,16 +513,16 @@ MonoBehaviour:
       Data: true
     - Name: Blend
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: blendTime
       Entry: 3
-      Data: 5
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 4|Cutscene.Action.CS_Wait, Assembly-CSharp
+      Data: 3|Squizyton.Cutscene.CS_Wait, Squizyton.Cutscene
     - Name: name
       Entry: 1
       Data: Wait
@@ -546,13 +531,13 @@ MonoBehaviour:
       Data: Pauses the Sequence Queue for specified Time
     - Name: pauseTime
       Entry: 4
-      Data: 5
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 5|Cutscene.Action.CS_SetCinemachineCameraPriority, Assembly-CSharp
+      Data: 4|Squizyton.Cutscene.CS_SetCinemachineCameraPriority, Squizyton.Cutscene
     - Name: name
       Entry: 1
       Data: Camera Transition
@@ -583,7 +568,59 @@ MonoBehaviour:
       Data: 6
     - Name: blendTime
       Entry: 3
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|Squizyton.Cutscene.CS_Wait, Squizyton.Cutscene
+    - Name: name
+      Entry: 1
+      Data: Wait
+    - Name: description
+      Entry: 1
+      Data: Pauses the Sequence Queue for specified Time
+    - Name: pauseTime
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 6|Squizyton.Cutscene.CS_SetCinemachineCameraPriority, Squizyton.Cutscene
+    - Name: name
+      Entry: 1
+      Data: Camera Transition
+    - Name: description
+      Entry: 1
+      Data: Transitions a Camera Priority from one Camera to Other. Can incorporate
+        Custom Blending
+    - Name: fromCameraIsPlayerCamera
+      Entry: 5
+      Data: false
+    - Name: FromCamera
+      Entry: 10
+      Data: 4
+    - Name: toCameraIsPlayerCamera
+      Entry: 5
+      Data: false
+    - Name: toCamera
+      Entry: 10
       Data: 5
+    - Name: CameraPriority
+      Entry: 3
+      Data: 20
+    - Name: ChangeBlend
+      Entry: 5
+      Data: true
+    - Name: Blend
+      Entry: 3
+      Data: 0
+    - Name: blendTime
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -697,10 +734,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 882106701}
   - {fileID: 317534667}
   - {fileID: 284140159}
   - {fileID: 1861714503}
-  - {fileID: 882106701}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962528102
@@ -1321,3 +1358,4 @@ SceneRoots:
   - {fileID: 75822571}
   - {fileID: 9533063}
   - {fileID: 953467673}
+  - {fileID: 810566305}

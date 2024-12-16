@@ -4,8 +4,6 @@ using UnityEngine;
 
 namespace Squizyton.Cutscene
 {
-
-
     public class CutscenePlayer : MonoBehaviour
     {
         private Queue<CutsceneAction> cutsceneActions;

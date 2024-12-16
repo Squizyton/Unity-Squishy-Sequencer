@@ -43,14 +43,15 @@ namespace Squizyton.Cutscene
          
             if(ChangeBlend)
             {
-                if (fromCameraIsPlayerCamera)
+                /*
+                if (fromCameraIsPlayerCamera) 
                     //This will need to be changed based on project needs
                     //FromCamera = ;
                 
                 //This will need to also be changed on project needs
                 if(toCameraIsPlayerCamera)
                    // toCamera = 
-         
+                */
                 
                 toCamera.Priority = CameraPriority;
                 FromCamera.Priority = 0;
@@ -65,18 +66,13 @@ namespace Squizyton.Cutscene
             
             CinemachineCore.GetBlendOverride += OnBlendOverride;
         }
-        
         private CinemachineBlendDefinition OnBlendOverride(ICinemachineCamera fromvcam, ICinemachineCamera tovcam, CinemachineBlendDefinition defaultblend, Object owner)
         {
-            Debug.Log("This is doing a custom blend override");
-            
-            
-                if (((CinemachineCamera)fromvcam == FromCamera && (CinemachineCamera)tovcam == toCamera))
-                {
-                    Debug.Log("Doing custom blend");
-                    return customBlend;
-                }
+            if (((CinemachineCamera)fromvcam != FromCamera || (CinemachineCamera)tovcam != toCamera))
                 return defaultblend;
+            
+            //Custom Blend
+            return customBlend;
         }
         
         public override Status Executing()
