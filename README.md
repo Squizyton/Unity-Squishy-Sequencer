@@ -74,8 +74,8 @@ And that's it!
 - Add ability to pause sequence without resorting to `Time.timeScale = 0`
 - Convert to Editor Window
 - Add intergration for the following Assets
-    -Feel
-    - Ink/Yarn Spinner  
+  - Feel
+  - Ink/Yarn Spinner  
 
 
 # Dependencies
