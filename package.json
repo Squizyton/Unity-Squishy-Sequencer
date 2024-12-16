@@ -1,6 +1,6 @@
 {
   "name": "com.squizy.cutscene-sequencer",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "displayName": "Squishy Sequencer",
   "description": "A Basic Event Based Cutscene System",
   "unity": "6000.0",
