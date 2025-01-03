@@ -447,6 +447,7 @@ MonoBehaviour:
     - {fileID: 882106700}
     - {fileID: 317534666}
     - {fileID: 284140158}
+    - {fileID: -944628639613478452, guid: 33736bb343178d14f9af051bd9972d9a, type: 3}
     - {fileID: 1861714502}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -459,7 +460,7 @@ MonoBehaviour:
         Squizyton.Cutscene]], mscorlib
     - Name: 
       Entry: 12
-      Data: 6
+      Data: 7
     - Name: 
       Entry: 7
       Data: 1|Squizyton.Cutscene.CS_MoveToPosition, Squizyton.Cutscene
@@ -590,7 +591,25 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 6|Squizyton.Cutscene.CS_SetCinemachineCameraPriority, Squizyton.Cutscene
+      Data: 6|Squizytion.SpecialActions.CS_WaitForInputAction, Squizyton.SpecialActions
+    - Name: name
+      Entry: 1
+      Data: Wait For User Input
+    - Name: description
+      Entry: 1
+      Data: Uses Unity's new input system to wait for user input to continue Sequence
+    - Name: inputActionReference
+      Entry: 10
+      Data: 5
+    - Name: ActionName
+      Entry: 1
+      Data: Interaction
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 7|Squizyton.Cutscene.CS_SetCinemachineCameraPriority, Squizyton.Cutscene
     - Name: name
       Entry: 1
       Data: Camera Transition
@@ -609,7 +628,7 @@ MonoBehaviour:
       Data: false
     - Name: toCamera
       Entry: 10
-      Data: 5
+      Data: 6
     - Name: CameraPriority
       Entry: 3
       Data: 20
